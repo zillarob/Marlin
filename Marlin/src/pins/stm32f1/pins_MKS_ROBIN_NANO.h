@@ -52,8 +52,8 @@
 //
 #define X_STOP_PIN                          PA15
 #define Y_STOP_PIN                          PA12
-#define Z_MIN_PIN                           PA11
-#define Z_MAX_PIN                           PC4
+#define Z_MIN_PIN                           PC4 //PA11
+#define Z_MAX_PIN                           PC11 //PC4
 
 #ifndef FIL_RUNOUT_PIN
   #define FIL_RUNOUT_PIN                    PA4   // MT_DET
@@ -79,7 +79,7 @@
 #define E0_DIR_PIN                          PD3
 
 #define E1_ENABLE_PIN                       PA3
-#define E1_STEP_PIN                         PA6
+#define E1_STEP_PIN                         -1 //PA6
 #define E1_DIR_PIN                          PA1
 
 //
@@ -93,7 +93,12 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN                        PC3   // HEATER1
-#define HEATER_1_PIN                        PB0   // HEATER2
+
+#if HOTENDS == 1  //Nereus
+  #define FAN1_PIN                          PB0
+#else
+  #define HEATER_1_PIN                      PB0   // HEATER2
+#endif
 #define HEATER_BED_PIN                      PA0   // HOT BED
 
 #define FAN_PIN                             PB1   // FAN
@@ -116,7 +121,7 @@
 //#define KILL_PIN                          PA2   // Enable MKSPWC support ROBIN NANO v1.2 ONLY
 //#define KILL_PIN_INVERTING true                 // Enable MKSPWC support ROBIN NANO v1.2 ONLY
 
-//#define SERVO0_PIN                        PA8   // Enable BLTOUCH support ROBIN NANO v1.2 ONLY
+#define SERVO0_PIN                        PA6   // Enable BLTOUCH support ROBIN NANO v1.2 ONLY
 
 //#define LED_PIN                           PB2
 
@@ -127,11 +132,12 @@
 // SD Card
 //
 #ifndef SDCARD_CONNECTION
-  //#define SDCARD_CONNECTION            ONBOARD
+  #define SDCARD_CONNECTION            ONBOARD
 #endif
 
 #define SDIO_SUPPORT
 #define SD_DETECT_PIN                       PD12
+#define ONBOARD_SD_CS_PIN                   PC11
 
 //
 // LCD / Controller
