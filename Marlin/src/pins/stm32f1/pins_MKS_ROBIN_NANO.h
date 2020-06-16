@@ -94,7 +94,7 @@
 //
 #define HEATER_0_PIN                        PC3   // HEATER1
 
-#if HOTENDS == 1  //Nereus
+#if HOTENDS == 1
   #define FAN1_PIN                          PB0
 #else
   #define HEATER_1_PIN                      PB0   // HEATER2
