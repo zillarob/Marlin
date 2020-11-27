@@ -179,6 +179,10 @@
   #include "feature/repeat.h"
 #endif
 
+#if ENABLED(GCODE_REPEAT_MARKERS)
+  #include "feature/repeat.h"
+#endif
+
 #if ENABLED(POWER_LOSS_RECOVERY)
   #include "feature/powerloss.h"
 #endif
