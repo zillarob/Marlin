@@ -100,17 +100,11 @@ namespace Language_hu {
   PROGMEM Language_Str MSG_COOLDOWN                        = _UxGT("Visszahütés");
 
   PROGMEM Language_Str MSG_CUTTER_FREQUENCY                = _UxGT("Frekvencia");
-  PROGMEM Language_Str MSG_LASER_MENU                      = _UxGT("Lézer vezérlés");
-  PROGMEM Language_Str MSG_SPINDLE_MENU                    = _UxGT("Orsó vezérlés");
-  PROGMEM Language_Str MSG_LASER_POWER                     = _UxGT("Lézer telj.");
-  PROGMEM Language_Str MSG_SPINDLE_POWER                   = _UxGT("Orsó telj.");
-  PROGMEM Language_Str MSG_LASER_TOGGLE                    = _UxGT("Lézer váltás");
-  PROGMEM Language_Str MSG_LASER_PULSE_MS                  = _UxGT("Impulzus teszt ms");
-  PROGMEM Language_Str MSG_LASER_FIRE_PULSE                = _UxGT("Tűz impulzus");
-  PROGMEM Language_Str MSG_SPINDLE_TOGGLE                  = _UxGT("Orsóváltás");
-  PROGMEM Language_Str MSG_SPINDLE_FORWARD                 = _UxGT("Orsó előre");
-  PROGMEM Language_Str MSG_SPINDLE_REVERSE                 = _UxGT("Orsó hátra");
-
+  PROGMEM Language_Str MSG_LASER_MENU                      = _UxGT("Lézer Vezérlés");
+  PROGMEM Language_Str MSG_LASER_POWER                     = _UxGT("Lézer Teljesítmény");
+  PROGMEM Language_Str MSG_SPINDLE_MENU                    = _UxGT("Orsó Vezérlés");
+  PROGMEM Language_Str MSG_SPINDLE_POWER                   = _UxGT("Orsó Teljesítmény");
+  PROGMEM Language_Str MSG_SPINDLE_REVERSE                 = _UxGT("Orsó Hátra");
   PROGMEM Language_Str MSG_SWITCH_PS_ON                    = _UxGT("Bekapcsolás");
   PROGMEM Language_Str MSG_SWITCH_PS_OFF                   = _UxGT("Kikapcsolás");
   PROGMEM Language_Str MSG_EXTRUDE                         = _UxGT("Adagol");
