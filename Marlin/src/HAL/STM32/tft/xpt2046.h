@@ -23,10 +23,8 @@
 
 #ifdef STM32F1xx
   #include <stm32f1xx_hal.h>
-  #define __IS_DMA_ENABLED(__HANDLE__)  ((__HANDLE__)->Instance->CCR & DMA_CCR_EN)
 #elif defined(STM32F4xx)
   #include <stm32f4xx_hal.h>
-  #define __IS_DMA_ENABLED(__HANDLE__)  ((__HANDLE__)->Instance->CR & DMA_SxCR_EN)
 #endif
 
 #include "../../../inc/MarlinConfig.h"
