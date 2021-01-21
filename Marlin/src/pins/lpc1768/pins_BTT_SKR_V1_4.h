@@ -360,6 +360,8 @@
 
     #define BEEPER_PIN               EXP1_10_PIN
 
+    #define BEEPER_PIN              EXPA1_10_PIN
+
   #elif ENABLED(CR10_STOCKDISPLAY)
     #define BTN_ENC                  EXP1_09_PIN  // (58) open-drain
     #define LCD_PINS_RS              EXP1_04_PIN
