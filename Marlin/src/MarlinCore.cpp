@@ -1119,6 +1119,9 @@ void setup() {
   // Some HAL need precise delay adjustment
   calibrate_delay_loop();
 
+  // Some HAL need precise delay adjustment
+  calibrate_delay_loop();
+
   // Init buzzer pin(s)
   #if USE_BEEPER
     SETUP_RUN(buzzer.init());
